@@ -19,7 +19,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/1",
       "public_reproducer": null
     },
     {
@@ -33,7 +33,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/2",
       "public_reproducer": null
     },
     {
@@ -47,7 +47,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/3",
       "public_reproducer": "https://github.com/WorldOfEpoch/codex-provider-compatibility-lab"
     },
     {
@@ -61,7 +61,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/4",
       "public_reproducer": null
     },
     {
@@ -75,7 +75,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/5",
       "public_reproducer": null
     },
     {
@@ -89,7 +89,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/6",
       "public_reproducer": null
     },
     {
@@ -103,7 +103,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/7",
       "public_reproducer": null
     },
     {
@@ -117,7 +117,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/8",
       "public_reproducer": null
     },
     {
@@ -131,7 +131,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/9",
       "public_reproducer": null
     },
     {
@@ -145,7 +145,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/10",
       "public_reproducer": null
     },
     {
@@ -159,7 +159,7 @@
       "reported_on": "2026-10-16",
       "affected_versions": "not established",
       "confirmed_fixed_versions": [],
-      "tracking_issue": null,
+      "tracking_issue": "https://github.com/WorldOfEpoch/codex-windows-community/issues/11",
       "public_reproducer": null
     }
   ]

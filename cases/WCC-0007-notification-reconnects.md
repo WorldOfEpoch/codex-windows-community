@@ -9,7 +9,7 @@
 | Reported / reviewed | October 16, 2026 |
 | Affected versions | Not established; exact app build was not captured in the public record |
 | Confirmed fixed versions | None established |
-| Tracking issue | Pending publication; link the issue carrying this case ID |
+| Tracking issue | [Discussion and reports](https://github.com/WorldOfEpoch/codex-windows-community/issues/7) |
 
 ## Symptoms
 

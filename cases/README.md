@@ -2,19 +2,19 @@
 
 Each record tracks one problem or source-proven risk. Its status is an evidence claim, not a judgment about all users or current product releases. [Contribution rules](../CONTRIBUTING.md) define the status fields.
 
-| ID | Problem | Status | Evidence |
-| --- | --- | --- | --- |
-| [WCC-0001](./WCC-0001-global-relay-refusal.md) | Global relay dependency and connection refusal | `contained_locally` | `runtime_and_source` |
-| [WCC-0002](./WCC-0002-watcher-restarts-and-stale-pids.md) | A restart watcher outlives relay removal | `contained_locally` | `runtime_and_source` |
-| [WCC-0003](./WCC-0003-tool-history-validation.md) | Tool-history validation must follow each item type | `regression_documented` | `source_and_synthetic` |
-| [WCC-0004](./WCC-0004-blender-helper-trees.md) | Repeated Blender connector helper trees | `contained_locally` | `runtime` |
-| [WCC-0005](./WCC-0005-stream-framing-and-body-limits.md) | Relay stream framing and response-body limits | `risk_documented` | `source` |
-| [WCC-0006](./WCC-0006-thread-read-access-denied.md) | Repeated thread/read access-denied failures | `unresolved` | `runtime` |
-| [WCC-0007](./WCC-0007-notification-reconnects.md) | Cloud notification reconnect schedules | `unresolved` | `runtime` |
-| [WCC-0008](./WCC-0008-app-server-websocket-1006.md) | App-server WebSocket closes with code 1006 | `unresolved` | `runtime` |
-| [WCC-0009](./WCC-0009-optional-connector-discovery.md) | Repeated discovery failures from an optional connector | `contained_locally` | `runtime` |
-| [WCC-0010](./WCC-0010-silent-compaction-provider-switch.md) | Compaction silently changes provider or model | `risk_documented` | `source` |
-| [WCC-0011](./WCC-0011-unrelated-credential-startup-dependency.md) | Unrelated provider credentials block relay startup | `risk_documented` | `source` |
+| ID | Problem | Status | Evidence | Discussion |
+| --- | --- | --- | --- | --- |
+| [WCC-0001](./WCC-0001-global-relay-refusal.md) | Global relay dependency and connection refusal | `contained_locally` | `runtime_and_source` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/1) |
+| [WCC-0002](./WCC-0002-watcher-restarts-and-stale-pids.md) | A restart watcher outlives relay removal | `contained_locally` | `runtime_and_source` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/2) |
+| [WCC-0003](./WCC-0003-tool-history-validation.md) | Tool-history validation must follow each item type | `regression_documented` | `source_and_synthetic` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/3) |
+| [WCC-0004](./WCC-0004-blender-helper-trees.md) | Repeated Blender connector helper trees | `contained_locally` | `runtime` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/4) |
+| [WCC-0005](./WCC-0005-stream-framing-and-body-limits.md) | Relay stream framing and response-body limits | `risk_documented` | `source` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/5) |
+| [WCC-0006](./WCC-0006-thread-read-access-denied.md) | Repeated thread/read access-denied failures | `unresolved` | `runtime` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/6) |
+| [WCC-0007](./WCC-0007-notification-reconnects.md) | Cloud notification reconnect schedules | `unresolved` | `runtime` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/7) |
+| [WCC-0008](./WCC-0008-app-server-websocket-1006.md) | App-server WebSocket closes with code 1006 | `unresolved` | `runtime` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/8) |
+| [WCC-0009](./WCC-0009-optional-connector-discovery.md) | Repeated discovery failures from an optional connector | `contained_locally` | `runtime` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/9) |
+| [WCC-0010](./WCC-0010-silent-compaction-provider-switch.md) | Compaction silently changes provider or model | `risk_documented` | `source` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/10) |
+| [WCC-0011](./WCC-0011-unrelated-credential-startup-dependency.md) | Unrelated provider credentials block relay startup | `risk_documented` | `source` | [Discuss](https://github.com/WorldOfEpoch/codex-windows-community/issues/11) |
 
 Use the stable case ID in issues and pull requests. A case's tracking issue holds discussion and new test results; the case file is the maintained summary. The [JSON index](index.json) provides the same IDs, paths, and review state for future tooling. It does not run anything.
 

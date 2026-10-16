@@ -1,0 +1,80 @@
+name: Fix contribution or test result
+description: Propose a scoped remedy, contribute a regression, or report versioned validation.
+title: "[Fix or test]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A proposed fix, a locally tested workaround, a synthetic regression, and an upstream release fix are different claims.
+        Link existing code or tests in their owning project. Keep this repository documentation only and do not paste private diagnostics or credentials.
+  - type: input
+    id: case
+    attributes:
+      label: Case ID and tracking issue
+      placeholder: WCC-NNNN and a public issue link
+    validations:
+      required: true
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Contribution type
+      options:
+        - Proposed fix; not yet validated
+        - Synthetic regression or failing reproduction
+        - Local workaround with measured results
+        - Additional test result for an existing fix
+        - Confirmed upstream release fix with public evidence
+        - Documentation correction
+    validations:
+      required: true
+  - type: textarea
+    id: owner_change
+    attributes:
+      label: Owning component and exact change
+      description: Explain why this component owns the problem, the proposed or completed change, and affected scope.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence_before
+    attributes:
+      label: Evidence before the change
+      description: A minimal synthetic reproduction or sanitized observation, with versions and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation and tested versions
+      description: Exact component versions/commits, Windows version, test date, acceptance check, result, and evidence link. State unrun checks clearly.
+      placeholder: |
+        Component/version or commit:
+        Platform and test date:
+        Acceptance check:
+        Result:
+        Public test/CI/upstream evidence:
+        Unrun checks and limitations:
+    validations:
+      required: true
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback and remaining risks
+      description: The scoped reversal, data/state limits, and unresolved alternatives. For documentation-only changes, say so.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Related code, tests, or upstream issues
+      description: Link the owning project instead of duplicating its implementation. Do not link private diagnostic files.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Publication and evidence checks
+      options:
+        - label: This contribution contains only information and material I have permission to share.
+          required: true
+        - label: I reviewed it for private data and separated verified behavior from untested claims.
+          required: true
+        - label: A passing adapter test is not being presented as a fixed Codex release.
+          required: true

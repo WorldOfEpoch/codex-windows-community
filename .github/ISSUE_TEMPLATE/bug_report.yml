@@ -1,0 +1,104 @@
+name: Problem report or same-issue evidence
+description: Report a new problem or add versioned observations to an existing case.
+title: "[Problem]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search the case index and existing issues first. For the same problem, a comment on its tracking issue is welcome. This form can also link a related case when you are unsure.
+        Share summaries or synthetic examples only. Do not upload raw logs, real conversations, full settings, endpoints, credentials, process command lines, or personal identifiers.
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Relationship to existing reports
+      options:
+        - New problem
+        - Same symptom as an existing case
+        - Possibly related, but unsure
+    validations:
+      required: true
+  - type: dropdown
+    id: case
+    attributes:
+      label: Matching or possibly related case
+      options:
+        - "New problem or unsure"
+        - "WCC-0001 — Global relay dependency and connection refusal"
+        - "WCC-0002 — A restart watcher outlives relay removal"
+        - "WCC-0003 — Tool-history validation must follow each item type"
+        - "WCC-0004 — Repeated Blender connector helper trees"
+        - "WCC-0005 — Relay stream framing and response-body limits"
+        - "WCC-0006 — Repeated thread/read access-denied failures"
+        - "WCC-0007 — Cloud notification reconnect schedules"
+        - "WCC-0008 — App-server WebSocket closes with code 1006"
+        - "WCC-0009 — Repeated discovery failures from an optional connector"
+        - "WCC-0010 — Compaction silently changes provider or model"
+        - "WCC-0011 — Unrelated provider credentials block relay startup"
+    validations:
+      required: true
+  - type: input
+    id: related_issue
+    attributes:
+      label: Existing issue link
+      description: Link the tracking issue if you found one; leave blank for a new problem.
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions and setup
+      description: Codex version/channel, Windows version, relevant connector or adapter version, and direct/local-relay/remote-gateway setup. Write unknown where needed. No endpoint URLs or account details.
+      placeholder: |
+        Codex version/channel:
+        Windows version:
+        Connector or adapter version:
+        Provider setup class:
+        Local or remote conversation scope:
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: What happened and what you expected
+      description: Describe visible impact and distinguish it from background log noise.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction or observation window
+      description: Minimal steps using invented content, frequency, and a bounded date/time window with timezone. State if you cannot reproduce it reliably.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Strongest evidence in this report
+      options:
+        - Symptom observed; cause unknown
+        - Reproduced with a synthetic example
+        - Source-review hypothesis
+        - Source mechanism confirmed with matching runtime evidence
+    validations:
+      required: true
+  - type: textarea
+    id: safe_evidence
+    attributes:
+      label: Sanitized evidence and possible explanations
+      description: Fixed error code/family, counts with their meaning, or a public synthetic reproduction. Separate established facts from guesses. Do not paste a diagnostic bundle.
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes tried and results
+      description: State each change, whether the relevant client restarted, what was observed afterward, and any reversal. Write none if nothing was changed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Publication check
+      options:
+        - label: I reviewed this report and its attachments for credentials, private content, endpoint URLs, local paths, and identifying data.
+          required: true
+        - label: I have distinguished observed symptoms from an unproven root cause.
+          required: true

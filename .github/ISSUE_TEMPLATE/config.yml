@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Browse existing cases
+    url: https://github.com/WorldOfEpoch/codex-windows-community/blob/main/cases/README.md
+    about: Find matching symptoms, evidence, limitations, and tracking issues.
+  - name: Security and private data
+    url: https://github.com/WorldOfEpoch/codex-windows-community/blob/main/SECURITY.md
+    about: Read this before reporting a vulnerability or sharing sensitive evidence.

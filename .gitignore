@@ -1,0 +1,14 @@
+# Public records only; private diagnostics never belong in this repository.
+private/
+local/
+artifacts/
+.env
+.env.*
+*.log
+*.jsonl
+*.sqlite*
+*.db
+*.pid
+*.bak
+*.zip
+*.dmp
